@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betting Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Betting Game</h1>
+        <p id="balance">Balance: $1000</p>
+      </header>
+
+      <section>
+        <h2>Available Matches</h2>
+        <div id="matches"></div>
+      </section>
+
+      <section>
+        <h2>Place Your Bet</h2>
+        <p>Select a match, enter your bet amount, and choose your team:</p>
+        <form id="betForm">
+          <!-- Match Selection -->
+          <label for="matchSelect">Choose a match:</label>
+          <select id="matchSelect"></select>
+          <br /><br />
+
+          <!-- Bet Amount Input -->
+          <label for="betAmount">Bet Amount:</label>
+          <input type="number" id="betAmount" />
+          <br /><br />
+
+          <!-- Team Selection -->
+          <label for="teamSelect">Choose a team:</label>
+          <select id="teamSelect"></select>
+          <br /><br />
+
+          <!-- Multiplier Display -->
+          <p id="multiplierDisplay"></p>
+
+          <!-- Submit Button -->
+          <button type="submit" id="betButton">Place Bet</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Results</h2>
+        <p id="result"></p>
+      </section>
+    </div>
+
+    <!-- External Script -->
+    <script src="game.js"></script>
+  </body>
+</html>
